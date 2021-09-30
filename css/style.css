@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ephesis', cursive;
+    background-color: rgb(156, 223, 57);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+h2{
+    position: absolute;
+    top:10px;
+    font-size: 58px;
+    color:#fff;
+}
+.emoji-container{
+    position: absolute;
+    top:100px;
+    right: 50px;
+}
+.emoji{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: greenyellow;
+    margin: 10px;
+
+    position: relative;
+}
+.fill{
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+.level{
+    position: absolute;
+    top:50%;
+    left: -150%;
+
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px rgba(0,0,0,1);
+    color:#fff;
+}
+.badfill,.badfill1,.badfill2{
+    background-image: url(../img/bad.png);
+   
+}
+.unsatisfiedfill,.unsatisfiedfill1,.unsatisfiedfill2{    
+        background-image: url(../img/usatisfiedl.png);
+}
+.satisfiedfill,.satisfiedfill1,.satisfiedfill2{
+    background-image: url(../img/satisfied.png);
+}
+.goodfill,.goodfill1,.goodfill2{
+    background-image: url(../img/good.png);
+}
+.feedback-container{
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+#feedback-title{
+    font-size: 40px;
+}
+.fa-star{
+    color:green;
+    cursor: pointer;
+}
+
+.feedbackemoji{
+    margin: 10px;
+
+}
+#nextbtn,#nextbtn1{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#nextbtn:hover,#nextbtn1:hover{
+    color:red;
+}
+#nextbtn:active,#nextbtn1:active,button:active{
+    transform: scale(0.98);
+}
+
+button{
+    font-family: 'Ephesis', cursive;
+    padding: 5px 18px;
+    font-size: 20px;
+    border:0;
+    background-color: crimson;
+    color:#fff;
+    border-radius: 5px;
+    margin:5px 0px;
+}
+.hold{
+    border:3px dotted rgb(241, 143, 14);
+}
+.hovered{
+    background-color: rgb(173, 164, 164);
+    border:3px dashed #333;
+}
+.hide{
+    display: none;
+}
+.fa-heart{
+    color:crimson;
+}
+
+#endtitle{
+    font-size: 29px;
+}
+.endtitle{
+    margin-bottom: 10px;
+}
+.endfeedback{
+    margin:10px;
+}
+.endstar{
+    border:2px solid crimson;
+    padding: 3px 6px;
+    margin-left: 3px;
+}
+.type{
+    font-size: 17px;
+}
+.selectedemoji{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+
+    color:green;
+    
+    letter-spacing: 2px;
+    padding-left: 4px;
+    
+    
+}
+@media(max-width:"800px"){
+    .feedback-container{
+        background-color: yellow;
+        width: 300px;
+        padding: 15px;
+    }
+}
